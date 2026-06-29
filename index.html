@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Facturation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- HEADER FIXE -->
+    <div class="header-fixed entete">
+        <div class="header d-flex justify-content-between align-items-center px-4">
+            <h3 class="m-0">FACTURATION-APP</h3>
+            <div class="d-flex gap-2">
+                <i class="bi bi-question-circle-fill me-3"> Aide</i>
+                <i class="bi bi-calendar-event"></i>
+                <i class="bi bi-shop"></i>
+                <i class="bi bi-gear-fill"></i>
+            </div>
+        </div>
+        <div class="menu px-5 text-white">
+            <!-- PRODUCTIVITÉ -->
+            <div class="menu-item">
+                <input type="checkbox" id="m1">
+                <label for="m1">PRODUCTIVITÉ</label>
+
+                <div class="submenu">
+                    <p> <i class="bi bi-graph-up"></i> Analyse</p>
+                    <p> <i class="bi bi-check-circle"></i> Tâches</p>
+                    <p><i class="bi bi-card-checklist"></i> Projets</p>
+                    <p><i class="bi bi-clock-history"></i> suivi du temps</p>
+                </div>
+            </div>
+
+            <!-- SUIVI -->
+            <div class="menu-item">
+                <input type="checkbox" id="m2">
+                <label for="m2">SUIVI & FACTURES</label>
+                <div class="submenu">
+                   <a href="facturation.html" class="text-decoration-none"> <p id="goFacturation">  <i class="bi bi-file-earmark-text"></i> Facturation</p></a>
+                    <a href="#"><p id="goClient"> <i class="bi bi-person-square"></i> Client</p></a>
+                    <a href="#"><p id="goArticles"> <i class="bi bi-file-earmark"></i> Articles</p></a>
+                </div>
+            </div>
+
+            <!-- AUTRES -->
+            <div class="menu-item">
+                <input type="checkbox" id="m3">
+                <label for="m3">COMPTABILITÉ</label>
+
+                <div class="submenu">
+                    <p> <i class="bi bi-bank"></i> Banques</p>
+                    <p> <i class="bi bi-journal-bookmark"></i> Livres</p>
+                    <p><i class="bi bi-briefcase"></i> Déclarations</p>
+                    <p><i class="bi bi-file-text"></i> TVA</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="m3">
+                <label for="m3">COMPTABILITÉ</label>
+
+                <div class="submenu">
+                    <p><i class="bi bi-tag"></i> CE des insides</p>
+                    <p><i class="bi bi-shop"></i> Store</p>
+                    <p><i class="bi bi-people-fill"></i> Parrainage</p> 
+                    <p><i class="bi bi-link-45deg"></i> Integrations</p> 
+                    <p><i class="bi bi-cloud-arrow-down"></i> Exports</p> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTENU -->
+    <div class="container-fluid d-flex flex-column align-items-center CONTENU">
+
+        <!-- TITRE -->
+        <div class="d-flex justify-content-between align-items-center mt-3 w-100 px-4">
+            <h3 class="mb-3 ext-primary">Bonjour User</h3>
+        </div>
+        <div class="d-flex gap-2 svc w-100">
+            <div
+                class="demo-box shadow-bottom w-100 h-100 overflow-hidden d-flex align-items-start justify-content-start flex-column p-3">
+
+                <h6 class="m-0 fw-bold text-center">
+                    Statistique des facturations
+                </h6>
+                <h6 class="text-center text-secondary">
+                    Faite glisser votre souris au dessus du diagramme pour voir plus de détails
+                </h6>
+
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3 mt-3">
+
+                    <!-- SVG -->
+                    <svg width="170" height="170" viewBox="0 0 2253 2253" class="img-fluid">
+                        <path
+                            d="M1147.83,208.333c-517.767,0 -937.5,419.733 -937.5,937.5c-0,428.307 290.274,802.155 705.228,908.271l116.136,-454.135c-207.477,-53.058 -352.614,-239.982 -352.614,-454.136c-0,-258.883 209.866,-468.75 468.75,-468.75l-0,-468.75Z"
+                            fill="#1D4E80" />
+                        <path
+                            d="M1997.49,749.576c-153.977,-330.174 -485.321,-541.243 -849.663,-541.243l-0,468.704c182.171,0 347.843,105.535 424.832,270.622l424.831,-198.083Z"
+                            fill="#FE7437" />
+                        <path
+                            d="M905.188,2051.39c500.124,134.008 1014.19,-162.788 1148.2,-662.913c64.353,-240.168 30.664,-496.064 -93.656,-711.393l-405.95,234.375c62.16,107.665 79.005,235.613 46.828,355.697c-67.003,250.062 -324.036,398.46 -574.099,331.456l-121.321,452.778Z"
+                            fill="#EEEEEE" />
+                    </svg>
+
+                    <!-- LEGENDE -->
+                    <div class="d-flex flex-column gap-2">
+
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="cole"></div>
+                            <p class="m-0">En attente</p>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="cole1"></div>
+                            <p class="m-0">En cours</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="cole2"></div>
+                            <p class="m-0">En finalisé</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div
+                class="demo-box w-100 h-100 shadow-bottom con overflow-hidden d-flex align-items-start  flex-column p-3">
+
+                <h6 class=" m-0 fw-bold text-center">
+                    Statistique des articles par catégorie
+                </h6>
+                <h6 class="text-center text-secondary">
+                    Faite glisser votre souris au dessus du diagramme pour voir plus de détails
+                </h6>
+
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3 mt-3">
+
+                    <svg width="170" height="170" viewBox="0 0 2253 2253" class="img-fluid">
+                        <path
+                            d="M1147.83,208.333c-517.767,0 -937.5,419.733 -937.5,937.5c-0,428.307 290.274,802.155 705.228,908.271l116.136,-454.135c-207.477,-53.058 -352.614,-239.982 -352.614,-454.136c-0,-258.883 209.866,-468.75 468.75,-468.75l-0,-468.75Z"
+                            fill="#1D4E80" />
+                        <path
+                            d="M1997.49,749.576c-153.977,-330.174 -485.321,-541.243 -849.663,-541.243l-0,468.704c182.171,0 347.843,105.535 424.832,270.622l424.831,-198.083Z"
+                            fill="#FE7437" />
+                        <path
+                            d="M905.188,2051.39c500.124,134.008 1014.19,-162.788 1148.2,-662.913c64.353,-240.168 30.664,-496.064 -93.656,-711.393l-405.95,234.375c62.16,107.665 79.005,235.613 46.828,355.697c-67.003,250.062 -324.036,398.46 -574.099,331.456l-121.321,452.778Z"
+                            fill="#EEEEEE" />
+                    </svg>
+
+                    <div class="d-flex flex-column gap-2">
+
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="cole"></div>
+                            <p class="m-0">Prestation de service/p>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="cole1"></div>
+                            <p class="m-0">Vente de marchandise</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="cole2"></div>
+                            <p class="m-0">Prestation Artistique</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex gap-2 mt-3 svc w-100">
+            <div class="d-flex bg-white w-100 shadow-bottom rounded p-3 cursor-pointer justify-content-between">
+                <a href="#facturation" class="text-decoration-none text-body"> <i class="bi bi-file-earmark-text"></i> Facturation</a>
+                <i class="bi bi-chevron-right"></i>
+
+            </div>
+            <div class="d-flex bg-white w-100 shadow-bottom rounded p-3 cursor-pointer justify-content-between">
+                <a href="#Article" class="text-decoration-none text-body"> <i class="bi bi-file-earmark"></i> Article </a>
+                <i class="bi bi-chevron-right"></i>
+            </div>
+            <div class="d-flex bg-white w-100 shadow-bottom rounded p-3 cursor-pointer justify-content-between">
+                <a href="#Client" class="text-decoration-none text-body"> <i class="bi bi-person-square"></i> client</a>
+                <i class="bi bi-chevron-right"></i>
+
+            </div>
+        </div>
+
+        <div class="d-flex gap-2 mt-3 mb-3 svc w-100">
+            <div id="facturation" class="d-flex flex-column  box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
+                <div class="w-75 d-flex justify-content-between justify-content-center">
+                    <h6>Facturation </h6>
+                    <h6>Facturation </h6>
+                </div>
+
+                <div class="box-3">
+                    <div class="bx1">
+
+                    </div>
+                </div>
+
+                <div class="d-flex w-100 pt-3 justify-content-between">
+
+                    <h6>F-2023-0112 <br>
+
+                        <span class="text-primary">John Doe</span> <br>
+                        13 mars 2023
+                    </h6>
+
+                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 justify-content-between">
+
+                    <h6>F-2023-0112 <br>
+
+                        <span class="text-primary">John Doe</span> <br>
+                        13 mars 2023
+                    </h6>
+
+                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 justify-content-between">
+
+                    <h6>F-2023-0112 <br>
+
+                        <span class="text-primary">John Doe</span> <br>
+                        13 mars 2023
+                    </h6>
+
+                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 justify-content-between">
+
+                    <h6>F-2023-0112 <br>
+
+                        <span class="text-primary">John Doe</span> <br>
+                        13 mars 2023
+                    </h6>
+
+                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 justify-content-between">
+
+                    <h6>F-2023-0112 <br>
+
+                        <span class="text-primary">John Doe</span> <br>
+                        13 mars 2023
+                    </h6>
+
+                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+
+                </div>
+                
+            </div>
+            <div id="Article" class="d-flex  flex-column box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
+                <div class="w-75 d-flex justify-content-between justify-content-center">
+                    <h6>Facturation </h6>
+                    <h6>Facturation </h6>
+                </div>
+
+                <div class="box-3">
+                    <div class="bx1">
+
+                    </div>
+                </div>
+
+                <div class="d-flex w-100 h-25 pt-3 justify-content-between">
+
+                    <h6 class="fw-bold">Waké
+                    </h6>
+
+                    <h6>Vente de marchandises</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 h-25 justify-content-between">
+
+                    <h6 class="fw-bold">Forfaits main
+                    </h6>
+
+                    <h6>Prestation artistique</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 h-25 justify-content-between">
+
+                    <h6 class="fw-bold">Assistance Admin
+                    </h6>
+
+                    <h6>Prestation service</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 h-25 justify-content-between">
+
+                    <h6 class="fw-bold">Template de site web
+                    </h6>
+
+                    <h6>Prestation service</h6>
+
+                </div>
+                <div class="d-flex w-100 pt-3 h-25 justify-content-between">
+
+                    <h6 class="fw-bold">Développement web
+                    </h6>
+
+                    <h6>Prestation service</h6>
+
+                </div>
+
+
+            </div>
+            <div id="Client" class="d-flex flex-column box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
+                <div class="w-75 d-flex justify-content-between justify-content-center">
+                    <h6>Facturation </h6>
+                    <h6>Facturation </h6>
+                </div>
+
+                <div class="box-3">
+                    <div class="bx1">
+
+                    </div>
+                </div>
+
+                <div class="d-flex w-100 pt-3 h-50 align-items-center justify-content-between">
+
+                    <h6> <span class="text-primary my-2">john Doe</span> <br>
+
+                        <br>
+
+                    john.doe@example.com <br>
+                    BP-10000 Niamey</h6>
+                    <h6 class="fw-bold">...</h6>
+                </div>
+                <div class="d-flex w-100 pt-3 h-50 align-items-center justify-content-between">
+
+                    <h6> <span class="text-primary my-2">john Doe</span> <br>
+
+                        <br>
+
+                    john.doe@example.com <br>
+                    BP-10000 Niamey</h6>
+                    <h6 class="fw-bold">...</h6>
+                </div>
+                <div class="d-flex w-100 pt-3 h-50 align-items-center justify-content-between">
+
+                    <h6> <span class="text-primary my-2">john Doe</span> <br>
+
+                        <br>
+
+                    john.doe@example.com <br>
+                    BP-10000 Niamey</h6>
+                    <h6 class="fw-bold">...</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

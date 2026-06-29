@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crer acompte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-0 mx-2">
+
+    <div class="d-flex mt-3 FAC1  justify-content-between">
+        <h1 class="fs-2 text-primary">Facture</h1>
+        <span class="fs-1 text-primary">x</span>
+    </div>
+
+    <div class="d-flex gap-3 FAC ">
+        <div class="d-flex w-100  flex-column">
+
+            <div>
+                <p class="text-primary">
+                    <i class="bi bi-arrow-left-right"></i>
+                    Changer le document
+                </p>
+            </div>
+
+            <div class="rounded bg-white p-2">
+                <h5 class="relation">En relation avec</h5>
+
+                <div class="d-flex FAC justify-content-between">
+                    <div class="">
+                        <span class="fs-4 fw-bolder"> A-2023-0112</span> <br>
+                        <span class="fw-bolder">Nom du client</span> <br>
+                        <i class="bi bi-clock"></i> 13 mars 2023
+                        <i class="bi bi-calendar"></i> 13 mars 2023
+
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 ">
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-primary p-0 fina px-3">Finalisé</button>
+
+                        </div>
+                        <h6 class="p-0 m-0"> 10 000 fcfa TTC</h6>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="rounded bg-white p-2 mt-3">
+                <div class="d-flex FAC justify-content-between">
+                    <h5 class="relation fs-2">Montant Acompte</h5>
+                </div>
+                <div class="d-flex flex-column p-3 justify-content-between nOMD ">
+
+                    <div class="d-flex FAC justify-content-between gap-2 w-100">
+                        <form method="get" action="" class="">
+                            <p>
+                                <label for="prenom"></label> <br>
+                                <input type="text" required name="prenom" id="prenom" placeholder="%"
+                                    class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
+                            </p>
+                        </form>
+                        <form method="get" action="" class="">
+                            <p>
+                                <label for="prenom">Montant total HT *</label> <br>
+                                <input type="text" required name="prenom" id="prenom" placeholder="00"
+                                    class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
+                            </p>
+                        </form>
+
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center">
+
+                        <div>
+                            Total à facturer <br>
+                            <span class="fw-bolder">10 000 fcfa HT</span>
+                        </div>
+                        <div>
+                            Montant de l'acompte<br>
+                            <span class="fw-bolder">3 000 fcfa HT</span>
+                        </div>
+                        <div>
+                            Reste à payer<br>
+                            <span class="fw-bolder">7 000 fcfa HT</span>
+                        </div>
+
+                    </div>
+
+                    <form method="get" action="" class="h-25">
+                        <p>
+                            <label for="ameliorer">Désignation</label><br>
+                            <textarea name="ameliorer" id="ameliorer" placeholder="Description de l'article"
+                                class="w-100 p-2 rounded m-1"></textarea>
+                        </p>
+                    </form>
+
+
+                </div>
+            </div>
+
+            <button class="btn border bg-white shadow p-2 text-primary mt-3 cursor-pointer text-start">+ Ajouter un
+                article</button>
+
+            <div class="rounded bg-white p-3 mt-3">
+                <div class="d-flex flex-column justify-content-between">
+                    <h5 class="relation">Date d'émission</h5>
+                    <form method="get" action="" class="w-100">
+                        <p class="p-0 m-0">
+                            <label for="prenom">Veuillez entrer une date d'émission *</label> <br>
+                            <input type="text" required name="prenom" id="prenom" placeholder="" value="00/00/0000"
+                                class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
+                        </p>
+                        <span class="jus p-0 m-0">Date d'émission le 00/00/0000</span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rounded bg-white p-3 mt-3 ">
+                <div class="d-flex flex-column justify-content-between">
+                    <h5 class="relation">Validité </h5>
+                    <form method="get" action="" class="w-100">
+                        <p class="p-0 m-0">
+                            <label for="prenom">Veuillez entrer une date limite </label> <br>
+                            <input type="text" required name="prenom" id="prenom"
+                                placeholder="Désignation de l'article " class="w-100 p-2 border rounded m-1" size="30"
+                                maxlength="20">
+                        </p>
+                        <span class="jus p-0 m-0">Valide jusqu'au 00/00/0000</span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rounded bg-white p-3 mt-3">
+                <div class="d-flex flex-column justify-content-between">
+                    <h5 class="relation">Langue </h5>
+                    <form method="get" action="">
+                        <p class="d-flex justify-content-between p-0 m-0">
+                            <label for="pays">Sélectionner une langue</label>
+                            <select name="pays" id="pays" class="rounded p-2 w-25">
+                                <option value="espagne">Espagne</option>
+                                <option value="royaume-uni">Royaume-Uni</option>
+                                <option value="canada">Canada</option>
+                                <option value="japon">Japon</option>
+                            </select>
+                        </p>
+                        <span class="jus p-0 m-0">Langue actuelle : Français</span>
+                    </form>
+                </div>
+            </div>
+            <div class="rounded bg-white p-3 mt-3">
+                <div class="d-flex flex-column justify-content-between">
+                    <h5 class="relation">Langue </h5>
+                    <form method="get" action="">
+                        <p class="d-flex justify-content-between p-0 m-0">
+                            <label for="pays">Modifier la devise</label>
+                            <select name="pays" id="pays" class="rounded p-2 w-25">
+                                <option value="espagne">FCFA</option>
+                                <option value="royaume-uni">Dollar</option>
+                                <option value="canada">Euro</option>
+                                <!-- <option value="japon">Japon</option> -->
+                            </select>
+                        </p>
+                        <span class="jus p-0 m-0">Devise actuelle : FCFA</span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rounded bg-white p-3 mb-3 mt-3">
+                <div class="d-flex flex-column justify-content-between">
+                    <h5 class="relation">Pièces Jointes </h5>
+                    <form method="get" action="">
+                        <p class="d-flex justify-content-between p-0 m-0">
+                            <label class="fw-bolder" for="pays">Ajouter des documents</label>
+                            <button class="btn btn-primary py-2  px-3">+ Ajouter un document</button>
+                        </p>
+                        <div class="d-flex document mt-3 align-items-center justify-content-center flex-column">
+
+                            <i class="bi bi-file-earmark fs-1"></i>
+                            <p>+ Ajouter un document</p>
+
+                        </div>
+                    </form>
+                    <p class="w-100 text-center"> Aucun document ajouté pour l'instant</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex  flex-column  configui gap-3">
+
+            <div class="d-flex align-items-end justify-content-end">
+                <button class="btn btn-primary">Configuirer</button>
+
+            </div>
+
+            <div class="d-flex align-items-end w-auto configui justify-content-end">
+                <div class="d-flex flex-column gap-2 bg-white p-2 rounded">
+                    <div class="row align-items-center px-lg-5 px-3 gy-3">
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <img src="image/Capture d’écran 2026-06-23 à 10.54.16.png" class="img-fluid w-75" alt="">
+                        </div>
+
+                        <div class="col-lg-7 text-lg-end text-center">
+                            <h3 class="text-primary">Facture</h3>
+                            <h4 class="fw-bolder">Nom du client</h4>
+                            <p>
+                                Boite postale et ville du client <br>
+                                Localisation du client
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr class="mx-5">
+                    <div class="row px-lg-5 px-3 gy-4">
+                        <div class="col-lg-6">
+                            <h1 class="logo fw-bolder">Nom du prestataire</h1>
+
+                            <p>
+                                Boite postale et ville du prestataire <br>
+                                Localisation du prestataire <br>
+                                Numéro de téléphone <br>
+                                Email
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 text-lg-end">
+                            <p>
+                                N° du document : 000000 <br>
+                                Date d'émission : 00-00-2025 <br>
+                                Date de validité : 00-00-2025
+                            </p>
+                        </div>
+                    </div>
+
+                     <hr class="mx-5">
+
+                    <div class="table-responsive px-lg-5 px-2">
+
+                        <table class="table text-primary text-start">
+
+                            <thead class="">
+                                <tr>
+                                    <th class="text-primary" >#</th>
+                                    <th class="text-primary">Désignation et description</th>
+                                    <th class="text-primary">Unité</th>
+                                    <th class="text-primary">Qté</th>
+                                    <th class="text-primary">Prix HT</th>
+                                    <th class="text-primary">TVA</th>
+                                    <th class="text-primary">Montant HT</th>
+                                    <th class="text-primary">Montant TTC</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>1</td>
+
+                                    <td class="text-start">
+                                        <strong>Désignation</strong><br>
+                                       Description de l'acompte<br>
+                                    </td>
+
+                                    <td>Unité</td>
+
+                                    <td>0</td>
+
+                                    <td>1000</td>
+
+                                    <td>0%</td>
+
+                                    <td>000000</td>
+
+                                    <td>000000</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <hr class="mx-5">
+
+
+                    <div class="row px-lg-5 px-3 gy-4">
+
+                        <div class="col-lg-6">
+
+                            <p class="fw-bold">Délai de paiement</p>
+
+                            <p>30 jours</p>
+
+                            <p class="fw-bold">Moyen de paiement</p>
+
+                            <p>Virement bancaire</p>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <table class="table table-borderless w-auto ms-lg-auto">
+
+                                <tr>
+
+                                    <th>Total HT</th>
+
+                                    <td>10000</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>TVA</th>
+
+                                    <td>2000</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Total TTC</th>
+
+                                    <td>12000</td>
+
+                                </tr>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

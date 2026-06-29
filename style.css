@@ -1,0 +1,416 @@
+body {
+    background: #E0E6ED;
+    overflow-x: hidden;
+    padding-top: 170px;
+}
+
+.header {
+    color: white;
+    padding: 15px;
+}
+
+.nOMD {
+    border-radius: 10px;
+    border: 1px solid #0d6efd;
+}
+
+.jus {
+    font-size: 12px;
+}
+
+.header-fixed {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relation {
+    color: #9ba6b2;
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    margin: 0 5px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #27375E;
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #89C7F4;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.CONTENU {
+    margin-top: 80px;
+}
+
+.document {
+    border: 2px dotted black;
+    border-radius: 20px;
+}
+
+.shadow-bottom {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.auto {
+    background-color: #27375E;
+}
+
+.conte {
+    background-color: #E0E6ED;
+}
+
+.fact {
+    background: #E0E6ED;
+}
+
+.clien {
+    padding: 10px;
+}
+
+.police {
+    font-size: 12px;
+}
+
+.Doc {
+    font-size: 12px;
+}
+
+.Nom {
+    font-size: 14px;
+}
+
+.offcan {
+    width: 700px !important;
+
+}
+
+.fina {
+    border-radius: 20px;
+    background-color: #B9E0FF;
+    border: none !important;
+    color: #0d6efd;
+}
+
+.previ {
+    border-bottom: 1px solid blue;
+    font-size: 18px;
+    width: 200px !important;
+}
+
+.relation {
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.Desi {
+    overflow-x: auto !important;
+
+}
+
+.desi1 {
+    font-size: 12px !important;
+    color: #0d6efd;
+
+}
+
+.desi3 {
+
+    border-bottom: 3px solid #0d6efd;
+    ;
+}
+
+.desi2 {
+    font-size: 13px !important;
+    color: black;
+}
+
+.hrdesi {
+    /* background-color: #0d6efd !important; */
+    border: 2px solid #0d6efd
+}
+
+
+
+
+.configui {
+    width: 100%;
+}
+
+.configui>div {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+
+.demo-box {
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.cole {
+    width: 15px;
+    height: 15px;
+    background: #1D4E80;
+    border-radius: 3px;
+}
+
+.cole1 {
+    width: 15px;
+    height: 15px;
+    background: #FE7437;
+    border-radius: 3px;
+}
+.cole2 {
+    width: 15px;
+    height: 15px;
+    background: #EEEEEE;
+    border-radius: 3px;
+}
+
+.box-2{
+    background-color: #FFFFFF !important;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    /* height: 400px !important; */
+
+    overflow-y: auto;
+    max-height: 470px; /* ou 400px / 500px selon ton layout */
+    
+    /* cache scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE et Edge */
+}
+
+/* Chrome, Safari */
+.box-2::-webkit-scrollbar{
+    display: none;
+}
+
+.box-3{
+    height: 4px !important;
+    width: 100% !important;
+    background-color: #a2a1a2 !important;
+    display: flex;
+    align-items: center;
+    /* justify-content: center !important; */
+}
+.bx1{
+    height: 4px !important;
+    width: 140px !important;
+    background-color: #a7c0f3 !important;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center !important; */
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.entete{
+    background: #2B375C;
+background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1) 91%);
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+    .CONTENU {
+        width: 100%;
+    }
+
+    .menu {
+        width: auto !important;
+    }
+
+    .menu1 {
+        width: 100% !important;
+
+    }
+
+}
+
+
+
+/* =======================
+   DESKTOP (ton design)
+======================= */
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-item label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submenu p {
+    margin: 5px 0;
+}
+
+/* cacher checkbox desktop */
+.menu-item input {
+    display: none;
+}
+
+/* =======================
+   MOBILE
+======================= */
+@media (max-width:768px) {
+
+    .CONTENU {
+        margin-top: 220px;
+    }
+
+    .FAC,
+    .FAC1 {
+        flex-direction: column;
+    }
+
+    .FAC1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signalé {
+        flex-direction: column;
+    }
+
+    .signalé1 {
+        flex-direction: column;
+    }
+
+    .clien {
+        width: 100% !important;
+    }
+
+    .clien4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .menuli {
+        width: 80% !important;
+        display: flex !important;
+        align-items: center !important;
+
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-item {
+        position: relative;
+    }
+
+    .menu-item label {
+        padding: 15px;
+        border-radius: 12px;
+        background: #3C54AA;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* submenu caché */
+    .submenu {
+        position: absolute;
+        top: 90%;
+        left: 0;
+        width: 100%;
+        border-radius: 11px;
+        color: black;
+        background: #e0e5ec;
+        display: none;
+        z-index: 999;
+    }
+
+
+    /* ouverture sans pousser les autres */
+    .menu-item input:checked~.submenu {
+        display: block;
+    }
+
+    .submenu p {
+        padding: 12px 15px;
+        margin: 0;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .submenu p:hover {
+        background: #0a58ca;
+    }
+
+    .svc{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .configui {
+        width: 400px !important;
+        /* background-color: #198754 !important; */
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    .desi1 {
+        font-size: 6px !important;
+        color: #0d6efd;
+
+    }
+}

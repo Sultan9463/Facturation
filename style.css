@@ -279,6 +279,8 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
 
 .menu-item {
     width: 100%;
+    border-left: 1px solid white;
+    padding: 10px;
 }
 
 .menu-item label {

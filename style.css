@@ -103,7 +103,7 @@ body {
 }
 
 .Nom {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .offcan {
@@ -119,10 +119,26 @@ body {
 }
 
 .previ {
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid #0d6efd;
     font-size: 18px;
     width: 200px !important;
 }
+
+.card1{
+    margin: 50px;
+    padding: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card2{
+    border: 1px solid rgb(69, 57, 236) !important;
+    padding: 9px !important;
+    margin: 4px;
+    border-radius: 10px;
+    /* height: 300px !important */
+    
+}
+
 
 .relation {
     font-size: 18px;
@@ -159,6 +175,26 @@ body {
     border: 2px solid #0d6efd
 }
 
+.svc{
+    width: 95%;
+    gap: 60px !important;
+}
+
+.svc1{
+    color: #327be9;
+}
+.colr{
+    color: #767a85;
+}
+.peti{
+    font-size: 11px;
+}
+.final{
+    background-color: #a4c3f1;
+    border-radius: 10px;
+    padding-inline: 20px !important;
+    color: #135bc8;
+}
 
 
 
@@ -178,13 +214,13 @@ body {
 
 .demo-box {
     background: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 6px;
 }
 
 .cole {
     width: 15px;
     height: 15px;
-    background: #1D4E80;
+    background: #575b5e;
     border-radius: 3px;
 }
 
@@ -232,7 +268,7 @@ body {
 .bx1{
     height: 4px !important;
     width: 140px !important;
-    background-color: #a7c0f3 !important;
+    background-color: #769eee !important;
     display: flex;
     /* align-items: center; */
     /* justify-content: center !important; */

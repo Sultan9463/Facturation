@@ -13,7 +13,7 @@
 <body class="p-0 mx-2">
 
     <div class="d-flex mt-3 FAC1  justify-content-between">
-        <h1 class="fs-2 text-primary">Facture</h1>
+        <h1 class="fs-2 text-primary">devis</h1>
         <span class="fs-1 text-primary">x</span>
     </div>
 
@@ -28,43 +28,20 @@
             </div>
 
             <div class="rounded bg-white p-2">
-                <h5 class="relation">En relation avec</h5>
+                <h5 class="relation">électionner un client</h5>
 
-                <div class="d-flex FAC justify-content-between">
-                    <div class="">
-                        <span class="fs-4 fw-bolder"> A-2023-0112</span> <br>
-                        <span class="fw-bolder">Nom du client</span> <br>
-                        <i class="bi bi-clock"></i> 13 mars 2023
-                        <i class="bi bi-calendar"></i> 13 mars 2023
-
-                    </div>
-
-                    <div class="d-flex align-items-center gap-2 ">
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-primary p-0 fina px-3">Finalisé</button>
-
-                        </div>
-                        <h6 class="p-0 m-0"> 10 000 fcfa TTC</h6>
-                    </div>
-                </div>
-                <div class="d-flex FAC mt-3 justify-content-between">
-                    <div class="">
-                        <span class="fs-4 fw-bolder"> D-2023-0112</span> <br>
-                        <span class="fw-bolder">Nom du client</span> <br>
-                        <i class="bi bi-clock"></i> 13 mars 2023
-                        <i class="bi bi-calendar"></i> 13 mars 2023
-
-                    </div>
-
-                    <div class="d-flex align-items-center gap-2 ">
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-primary p-0 fina px-3">Finalisé</button>
-
-                        </div>
-                        <h6 class="p-0 m-0"> 10 000 fcfa TTC</h6>
-                    </div>
-                </div>
-
+                <form method="get" action="">
+                        <p class=" p-0 m-0">
+                            <label for="pays">Sélectionner une langue</label> <br>
+                            <select name="pays" id="pays" class="rounded p-2 w-100">
+                                <option value="espagne">Nom du client</option>
+                                <option value="royaume-uni">Royaume-Uni</option>
+                                <option value="canada">Canada</option>
+                                <option value="japon">Japon</option>
+                            </select>
+                        </p>
+                        <i class="bi bi-pen-fill"></i> <span class="jus p-0 m-0">modifier ce client de ce projet</span>
+                    </form>
 
             </div>
 
@@ -87,7 +64,7 @@
                     <div class="d-flex FAC justify-content-between gap-2 w-100">
                         <form method="get" action="" class="w-100">
                             <p>
-                                <label for="prenom">Désignation *</label> <br>
+                                <label class="fw-bold" for="prenom">Désignation *</label> <br>
                                 <input type="text" required name="prenom" id="prenom"
                                     placeholder="Désignation de l'article " class="w-100 p-2 border rounded m-1"
                                     size="30" maxlength="20">
@@ -95,7 +72,7 @@
                         </form>
                         <form method="get" action="" class="">
                             <p>
-                                <label for="prenom">Référence *</label> <br>
+                                <label class="fw-bold" for="prenom">Référence *</label> <br>
                                 <input type="text" required name="prenom" id="prenom" placeholder="Référence"
                                     class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                             </p>
@@ -105,7 +82,7 @@
 
                     <form method="get" action="" class="h-25">
                         <p>
-                            <label for="ameliorer">Description</label><br>
+                            <label class="fw-bold" for="ameliorer">Description</label><br>
                             <textarea name="ameliorer" id="ameliorer" placeholder="Description"
                                 class="w-100 p-2 rounded m-1"></textarea>
                         </p>
@@ -113,7 +90,7 @@
 
                     <form method="get" action="" class="w-100">
                         <p>
-                            <label for="prenom">Type d'article * </label> <br>
+                            <label class="fw-bold" for="prenom">Type d'article * </label> <br>
                             <input type="text" required name="prenom" id="prenom" placeholder="Type d'article "
                                 class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                         </p>
@@ -122,28 +99,28 @@
                     <div class="d-flex FAC align-items-center gap-2 justify-content-center">
                         <form method="get" action="" class="w-100">
                             <p>
-                                <label for="prenom">Unité</label> <br>
+                                <label class="fw-bold" for="prenom">Unité</label> <br>
                                 <input type="text" required name="prenom" id="prenom" placeholder="Unité "
                                     class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                             </p>
                         </form>
                         <form method="get" action="" class="w-100">
                             <p>
-                                <label for="prenom">Unité</label> <br>
+                                <label class="fw-bold" for="prenom">Unité</label> <br>
                                 <input type="text" required name="prenom" id="prenom" placeholder="00 "
                                     class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                             </p>
                         </form>
                         <form method="get" action="" class="w-100">
                             <p>
-                                <label for="prenom">Prix HT * </label> <br>
+                                <label class="fw-bold" for="prenom">Prix HT * </label> <br>
                                 <input type="text" required name="prenom" id="prenom" placeholder="00"
                                     class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                             </p>
                         </form>
                         <form method="get" action="" class="w-100">
                             <p>
-                                <label for="prenom">TVA</label> <br>
+                                <label class="fw-bold" for="prenom">TVA</label> <br>
                                 <input type="text" required name="prenom" id="prenom" placeholder="% "
                                     class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                             </p>
@@ -161,11 +138,11 @@
                     <h5 class="relation">Date d'émission</h5>
                     <form method="get" action="" class="w-100">
                         <p class="p-0 m-0">
-                            <label for="prenom">Veuillez entrer une date d'émission *</label> <br>
+                            <label class="fw-bold" for="prenom">Veuillez entrer une date d'émission *</label> <br>
                             <input type="text" required name="prenom" id="prenom" placeholder="" value="00/00/0000"
                                 class="w-100 p-2 border rounded m-1" size="30" maxlength="20">
                         </p>
-                        <span class="jus p-0 m-0">Date d'émission le 00/00/0000</span>
+                        <span class="jus p-0 m-0 fw-bold">Date d'émission le 00/00/0000</span>
                     </form>
                 </div>
             </div>
@@ -175,12 +152,12 @@
                     <h5 class="relation">Validité </h5>
                     <form method="get" action="" class="w-100">
                         <p class="p-0 m-0">
-                            <label for="prenom">Veuillez entrer une date limite </label> <br>
+                            <label class="fw-bold" for="prenom">Veuillez entrer une date limite </label> <br>
                             <input type="text" required name="prenom" id="prenom"
                                 placeholder="Désignation de l'article " class="w-100 p-2 border rounded m-1" size="30"
                                 maxlength="20">
                         </p>
-                        <span class="jus p-0 m-0">Valide jusqu'au 00/00/0000</span>
+                        <span class="jus p-0 m-0 fw-bold">Valide jusqu'au 00/00/0000</span>
                     </form>
                 </div>
             </div>
@@ -190,7 +167,7 @@
                     <h5 class="relation">Langue </h5>
                     <form method="get" action="">
                         <p class="d-flex justify-content-between p-0 m-0">
-                            <label for="pays">Sélectionner une langue</label>
+                            <label class="fw-bold" for="pays">Sélectionner une langue</label>
                             <select name="pays" id="pays" class="rounded p-2 w-25">
                                 <option value="espagne">Espagne</option>
                                 <option value="royaume-uni">Royaume-Uni</option>
@@ -198,7 +175,7 @@
                                 <option value="japon">Japon</option>
                             </select>
                         </p>
-                        <span class="jus p-0 m-0">Langue actuelle : Français</span>
+                        <span class="jus p-0 m-0 fw-bold">Langue actuelle : Français</span>
                     </form>
                 </div>
             </div>
@@ -207,7 +184,7 @@
                     <h5 class="relation">Langue </h5>
                     <form method="get" action="">
                         <p class="d-flex justify-content-between p-0 m-0">
-                            <label for="pays">Modifier la devise</label>
+                            <label class="fw-bold" for="pays">Modifier la devise</label>
                             <select name="pays" id="pays" class="rounded p-2 w-25">
                                 <option value="espagne">FCFA</option>
                                 <option value="royaume-uni">Dollar</option>
@@ -215,7 +192,7 @@
                                 <!-- <option value="japon">Japon</option> -->
                             </select>
                         </p>
-                        <span class="jus p-0 m-0">Devise actuelle : FCFA</span>
+                        <span class="jus p-0 m-0 fw-bold">Devise actuelle : FCFA</span>
                     </form>
                 </div>
             </div>

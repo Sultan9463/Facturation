@@ -84,7 +84,7 @@
         <div class="d-flex justify-content-between align-items-center mt-3 w-100 px-4">
             <h3 class="mb-3 ext-primary">Bonjour User</h3>
         </div>
-        <div class="d-flex gap-2 svc w-100">
+        <div class="mx-5 d-flex gap-5 svc">
             <div
                 class="demo-box shadow-bottom w-100 h-100 overflow-hidden d-flex align-items-start justify-content-start flex-column p-3">
 
@@ -186,11 +186,11 @@
 
             </div>
             <div class="d-flex bg-white w-100 shadow-bottom rounded p-3 cursor-pointer justify-content-between">
-                <a href="#Article" class="text-decoration-none text-body"> <i class="bi bi-file-earmark"></i> Article </a>
+                <a href="#Article" class="text-decoration-none text-body"> <i class="bi bi-file-earmark cursor-pointer"></i> Article </a>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="d-flex bg-white w-100 shadow-bottom rounded p-3 cursor-pointer justify-content-between">
-                <a href="#Client" class="text-decoration-none text-body"> <i class="bi bi-person-square"></i> client</a>
+                <a href="#Client" class="text-decoration-none text-body"> <i class="bi bi-person-square cursor-pointer"></i> client</a>
                 <i class="bi bi-chevron-right"></i>
 
             </div>
@@ -199,8 +199,8 @@
         <div class="d-flex gap-2 mt-3 mb-3 svc w-100">
             <div id="facturation" class="d-flex flex-column  box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
                 <div class="w-75 d-flex justify-content-between justify-content-center">
-                    <h6>Facturation </h6>
-                    <h6>Facturation </h6>
+                    <h6 class="svc1">en attente  </h6>
+                    <h6>en retard </h6>
                 </div>
 
                 <div class="box-3">
@@ -268,8 +268,8 @@
             </div>
             <div id="Article" class="d-flex  flex-column box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
                 <div class="w-75 d-flex justify-content-between justify-content-center">
-                    <h6>Facturation </h6>
-                    <h6>Facturation </h6>
+                    <h6 class="svc1">en attente  </h6>
+                    <h6>en retard </h6>
                 </div>
 
                 <div class="box-3">
@@ -323,8 +323,8 @@
             </div>
             <div id="Client" class="d-flex flex-column box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
                 <div class="w-75 d-flex justify-content-between justify-content-center">
-                    <h6>Facturation </h6>
-                    <h6>Facturation </h6>
+                    <h6 class="svc1">Derniers  </h6>
+                    <h6>favoris </h6>
                 </div>
 
                 <div class="box-3">
@@ -333,36 +333,55 @@
                     </div>
                 </div>
 
-                <div class="d-flex w-100 pt-3 h-50 align-items-center justify-content-between">
+               <div class="d-flex w-100 m-0 mt-3 align-items-center justify-content-between">
 
-                    <h6> <span class="text-primary my-2">john Doe</span> <br>
-
-                        <br>
-
-                    john.doe@example.com <br>
-                    BP-10000 Niamey</h6>
-                    <h6 class="fw-bold">...</h6>
+                    <div class="d-flex flex-column m-0 p-0">
+                        <h5 class="svc1" >john Doe</h5>
+                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <small>BP-10000 Niamey</small>
+                    </div>
+                    <h6 class="fw-bold fs-1">...</h6>
                 </div>
-                <div class="d-flex w-100 pt-3 h-50 align-items-center justify-content-between">
+                <div class="d-flex w-100 m-0 align-items-center justify-content-between">
 
-                    <h6> <span class="text-primary my-2">john Doe</span> <br>
-
-                        <br>
-
-                    john.doe@example.com <br>
-                    BP-10000 Niamey</h6>
-                    <h6 class="fw-bold">...</h6>
+                    <div class="d-flex flex-column m-0 p-0">
+                        <h5 class="svc1" >john Doe</h5>
+                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <small>BP-10000 Niamey</small>
+                    </div>
+                    <h6 class="fw-bold fs-1">...</h6>
                 </div>
-                <div class="d-flex w-100 pt-3 h-50 align-items-center justify-content-between">
+                <div class="d-flex w-100 m-0 align-items-center justify-content-between">
 
-                    <h6> <span class="text-primary my-2">john Doe</span> <br>
-
-                        <br>
-
-                    john.doe@example.com <br>
-                    BP-10000 Niamey</h6>
-                    <h6 class="fw-bold">...</h6>
+                    <div class="d-flex flex-column m-0 p-0">
+                        <h5 class="svc1" >john Doe</h5>
+                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <small>BP-10000 Niamey</small>
+                    </div>
+                    <h6 class="fw-bold fs-1">...</h6>
                 </div>
+               <div class="d-flex w-100 m-0 align-items-center justify-content-between">
+
+                    <div class="d-flex flex-column m-0 p-0">
+                        <h5 class="svc1" >john Doe</h5>
+                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <small>BP-10000 Niamey</small>
+                    </div>
+                    <h6 class="fw-bold fs-1">...</h6>
+                </div>
+               <div class="d-flex w-100 m-0 align-items-center justify-content-between">
+
+                    <div class="d-flex flex-column m-0 p-0">
+                        <h5 class="svc1" >john Doe</h5>
+                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <small>BP-10000 Niamey</small>
+                    </div>
+                    <h6 class="fw-bold fs-1">...</h6>
+                </div>
+                
+
+
+                
             </div>
 
         </div>

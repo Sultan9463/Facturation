@@ -47,9 +47,10 @@
                 <input type="checkbox" id="m2">
                 <label for="m2">SUIVI & FACTURES</label>
                 <div class="submenu">
-                    <p id="goFacturation" class="cursor-pointer">  <i class="bi bi-file-earmark-text"></i> Facturation</p>
-                    <p id="goClient"> <i class="bi bi-person-square"></i> Client</p>
-                    <p id="goArticles"> <i class="bi bi-file-earmark"></i> Articles</p>
+                    <p id="goFacturation" class="cursor-pointer"> <i class="bi bi-file-earmark-text"></i> Facturation
+                    </p>
+                    <p id="goClient"> <i class="bi bi-person-square cursor-pointer"></i> Client</p>
+                    <p id="goArticles"> <i class="bi bi-file-earmark cursor-pointer"></i> Articles</p>
                 </div>
             </div>
 
@@ -72,9 +73,9 @@
                 <div class="submenu">
                     <p><i class="bi bi-tag"></i> CE des insides</p>
                     <p><i class="bi bi-shop"></i> Store</p>
-                    <p><i class="bi bi-people-fill"></i> Parrainage</p> 
-                    <p><i class="bi bi-link-45deg"></i> Integrations</p> 
-                    <p><i class="bi bi-cloud-arrow-down"></i> Exports</p> 
+                    <p><i class="bi bi-people-fill"></i> Parrainage</p>
+                    <p><i class="bi bi-link-45deg"></i> Integrations</p>
+                    <p><i class="bi bi-cloud-arrow-down"></i> Exports</p>
                 </div>
             </div>
 
@@ -197,7 +198,7 @@
                         <input type="text" placeholder="• Rechercher par numéro, litre, client..."
                             class="form-control w-100 border-0 shadow-none">
                     </div>
-                    <div class="bg-white clien clien4 w-50 rounded">
+                    <div class="bg-white d-flex gap-1 clien clien4 w-50 rounded">
                         <i class="bi bi-file-person"></i>
                         <p class="m-0 p-0">Clients</p>
                     </div>
@@ -207,92 +208,100 @@
                     class="d-flex flex-column gap-4 my-3 align-items-center w-100 bg-white p-3 justify-content-between">
                     <div class="d-flex justify-content-start w-100">
 
-                        <h6 class="w-100 fw-bolder">Designation</h6>
-                        <h6 class="w-50 fw-bolder">Status</h6>
-                        <h6 class="w-50 fw-bolder">Montant HT</h6>
-                        <h6 class="w-50 fw-bolder">Montant TTC</h6>
+                        <h6 class="w-100 colr">Designation</h6>
+                        <h6 class="w-50 colr">Status</h6>
+                        <h6 class="w-50 colr">Montant HT</h6>
+                        <h6 class="w-50 colr ">Montant TTC</h6>
                     </div>
 
 
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
                     <div class="d-flex align-items-center justify-content-start w-100 pointer"
                         data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">7-023-0112 <br>
+                        <h6 class="w-100">F-2023-0112 <br>
                             <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> O1 mars 2022 <i class="bi bi-calendar"></i> 11 mars 2023
+                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
+                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
                         </h6>
-                        <h6 class="w-50">Finalisé</h6>
-                        <h6 class="w-50">10 000,00 fcfa</h6>
-                        <h6 class="w-50">11 000,00 fcfa</h6>
+                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
+                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
+                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
                     </div>
 
                     <div class="d-flex align-items-center w-100 justify-content-end">
@@ -463,8 +472,7 @@
                         Nouveau
                         article </button>
 
-                    <button type="button" class="btn auto text-white"> <i class="bi bi-question-circle-fill me-1"></i>
-                        Automatiser</button>
+
                 </div>
 
                 <div class="tab-pane w-100 d-flex align-items-center gap-2 justify-content-between fade show active"
@@ -638,128 +646,138 @@
 
     <!-- OFFCANVAS -->
     <div class="offcanvas offcanvas-end offcan " id="facturationPopup">
-        <div class="d-flex flex-column align-items-start gap-2">
-            <div class="offcanvas-header w-100 d-flex justify-content-between align-items-center">
-                <h6 class="Doc">Document de facturation</h6>
+        <div class="d-flex flex-column align-items-start p-1">
+            <div class="offcanvas-header p-0 m-0 w-100 d-flex justify-content-between align-items-center">
+                <h6 class="Doc mx-3">Document de facturation</h6>
 
-                <div class="d-flex gap-2">
+                <div class="d-flex">
                     <button class="btn btn-primary p-0 fina px-3">Finalisé</button>
-                    <i class="bi bi-pen-fill"></i>
+                    <i class="bi bi-three-dots fw-bold"></i>
                 </div>
             </div>
-            <h2 class="fw-bolder mx-3">D-2023-0112</h2>
+            <h2 class="fw-bolder mx-3 m-0 p-0">D-2023-0112</h2>
 
-            <p class="Nom mx-3">Nom du client <br>
-                10 000 fcfa HT
-                10 000 fcfa TTC
-                <i class="bi bi-clock"></i> 13 mars 2023
-                <i class="bi bi-calendar"></i> 13 mars 2023
+            <p class="Nom mx-3 fw-bold">Nom du client <br>
+                <span>10 000 fcfa HT
+                    10 000 fcfa TTC
+                    <i class="bi bi-clock"></i> 13 mars 2023
+                    <i class="bi bi-calendar"></i> 13 mars 2023</span>
             </p>
 
         </div>
 
-        <div class="d-flex align-items-center gap-3 justify-content-center">
-            <h4 class="previ d-flex align-items-center justify-content-center">Prévisualisation</h4>
+        <div class="d-flex align-items-center gap-5 justify-content-center">
+            <h4 class="previ d-flex align-items-center justify-content-center svc1">Prévisualisation</h4>
             <h4 class="relation">Relation</h4>
         </div>
 
-        <div class="d-flex align-items-center justify-content-between px-5">
-            <!-- <h1 class=" logo fw-bolder ">LOGO</h1> -->
-            <img src="image/Capture d’écran 2026-06-23 à 10.54.16.png" class="w-50" alt="">
+        <div class="card1 d-flex flex-column gap-2">
+            <div class="d-flex align-items-center justify-content-between px-3">
+                <!-- <h1 class=" logo fw-bolder ">LOGO</h1> -->
+                <img src="image/Capture d’écran 2026-06-23 à 10.54.16.png" class="w-50" alt="">
 
-            <div class="d-flex flex-column align-items-end justify-content-center">
-                <h3 class="text-primary">Facture</h3>
-                <h4 class="fw-bolder">Nom du client</h4>
-                <p class="text-end">Boite postaleet ville du client <br> Localisation du client</p>
+                <div class="d-flex flex-column align-items-end justify-content-center">
+                    <h3 class="text-primary">devis</h3>
+                    <h4 class="fw-bolder">Nom du client</h4>
+                    <p class="text-end">Boite postaleet ville du client <br> Localisation du client</p>
+                </div>
             </div>
+
+            <hr class="mx-5">
+
+            <div class="d-flex align-items-start justify-content-between px-3">
+                <div class="d-flex flex-column gap-2 align-items-start">
+                    <h1 class=" logo fw-bolder ">Nom du prestataire</h1>
+                    <p class="text-start">
+                        Boite postale et ville du prestataire <br>
+                        Localisation du prestataire <br>
+                        Numéro de tel prestataire <br>
+                        Email du prestataire <br>
+                    </p>
+
+                </div>
+                <div class="d-flex flex-column align-items-start justify-content-end">
+
+                    <p class="text-end">N° du document
+                        000000 <br>
+                        Date d'émission
+                        00-00-2025 <br>
+                        Date de validité
+                        00-00-2025</p>
+                </div>
+            </div>
+
+            <div class="Desi px-5 d-flex flex-column gap-2 ">
+
+                <div class=" desi1 desi3 d-flex align-items-center justify-content-start gap-3">
+                    <span class="desi1">#</span>
+                    <h4 class="desi1">Désignation et description</h4>
+                    <h4 class="desi1">Unité</h4>
+                    <h4 class="desi1">Quantité</h4>
+                    <h4 class="desi1">Prix u.HT</h4>
+                    <h4 class="desi1">TVA</h4>
+                    <h4 class="desi1">Montant HT</h4>
+                    <h4 class="desi1">Montant TTC</h4>
+                </div>
+                <!-- <hr class="hrdesi"> -->
+                <div class=" desi1 d-flex align-items-center justify-content-between gap-3">
+                    <span class="desi2">1</span>
+                    <h4 class="desi2">Désignation <br>
+                        Description de l'article <br>
+                        paragraphe 1 <br>
+                        paragraphe 2
+                    </h4>
+                    <h4 class="desi2">Unité</h4>
+                    <h4 class="desi2">0</h4>
+                    <h4 class="desi2">1000</h4>
+                    <h4 class="desi2">00%</h4>
+                    <h4 class="desi2">000000</h4>
+                    <h4 class="desi2">000000</h4>
+
+                </div>
+                <hr class="border border-primary border-1 opacity-100">
+
+            </div>
+
+
+
+            <div class="d-flex align-items-start justify-content-between px-3">
+                <div class="d-flex flex-column align-items-start">
+                    <p class="fw-bolder ">Délai de paiement</p>
+                    <p class=" p-0 text-start">
+                        30 jours
+                    </p>
+                    <p class=" p-0  fw-bolder ">Délai de paiement</p>
+                    <p class="text-start">
+                        30 jours
+                    </p>
+                </div>
+
+                <div class="d-flex  align-items-start gap-3 justify-content-end">
+
+                    <p class="text-start fw-bolder d-flex flex-column gap-2">
+                        Total HT <br>
+                        TVA <br>
+                        Total TTC
+                    </p>
+                    <p class="text-end d-flex flex-column gap-2">
+                        10000 <br>
+                        2000 <br>
+                        12000
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-        <hr class="mx-5">
 
-        <div class="d-flex align-items-start justify-content-between px-5">
-            <div class="d-flex flex-column gap-2 align-items-start">
-                <h1 class=" logo fw-bolder ">Nom du prestataire</h1>
-                <p class="text-start">
-                    Boite postale et ville du prestataire <br>
-                    Localisation du prestataire <br>
-                    Numéro de tel prestataire <br>
-                    Email du prestataire <br>
-                </p>
-
-            </div>
-            <div class="d-flex flex-column align-items-start justify-content-end">
-
-                <p class="text-end">N° du document
-                    000000 <br>
-                    Date d'émission
-                    00-00-2025 <br>
-                    Date de validité
-                    00-00-2025</p>
-            </div>
-        </div>
-
-        <div class="Desi px-5 d-flex flex-column gap-2 ">
-
-            <div class=" desi1 desi3 d-flex align-items-center justify-content-start gap-3">
-                <span class="desi1">#</span>
-                <h4 class="desi1">Désignation et description</h4>
-                <h4 class="desi1">Unité</h4>
-                <h4 class="desi1">Quantité</h4>
-                <h4 class="desi1">Prix u.HT</h4>
-                <h4 class="desi1">TVA</h4>
-                <h4 class="desi1">Montant HT</h4>
-                <h4 class="desi1">Montant TTC</h4>
-            </div>
-            <!-- <hr class="hrdesi"> -->
-            <div class=" desi1 d-flex align-items-center justify-content-between gap-3">
-                <span class="desi2">1</span>
-                <h4 class="desi2">Désignation <br>
-                    Description de l'article <br>
-                    paragraphe 1 <br>
-                    paragraphe 2
-                </h4>
-                <h4 class="desi2">Unité</h4>
-                <h4 class="desi2">0</h4>
-                <h4 class="desi2">1000</h4>
-                <h4 class="desi2">00%</h4>
-                <h4 class="desi2">000000</h4>
-                <h4 class="desi2">000000</h4>
-            </div>
-
-        </div>
-
-        <hr class="mx-5">
-
-        <div class="d-flex align-items-start justify-content-between px-5">
-            <div class="d-flex flex-column align-items-start">
-                <p class="fw-bolder ">Délai de paiement</p>
-                <p class=" p-0 text-start">
-                    30 jours
-                </p>
-                <p class=" p-0  fw-bolder ">Délai de paiement</p>
-                <p class="text-start">
-                    30 jours
-                </p>
-            </div>
-
-            <div class="d-flex  align-items-start gap-3 justify-content-end">
-
-                <p class="text-start fw-bolder d-flex flex-column gap-2">
-                    Total HT <br>
-                    TVA <br>
-                    Total TTC
-                </p>
-                <p class="text-end d-flex flex-column gap-2">
-                    10000 <br>
-                    2000 <br>
-                    12000
-                </p>
-            </div>
-        </div>
     </div>
 
     <!-- OFFCANVAS -->
     <div class="offcanvas offcanvas-end" id="facturationArticle">
+
+
+
         <div class="offcanvas-header d-flex justify-content-between">
             <div class="d-flex gap-2">
                 <button class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -769,53 +787,58 @@
             <button class="btn btn-primary">Créer</button>
 
         </div>
-        <div class="offcanvas-body">
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Désignation de l'article * </label> <br>
-                    <input type="text" required name="prenom" id="prenom" placeholder="Désignation de l'article"
-                        class="w-100 p-2 rounded m-1" size="30" maxlength="20">
-                </p>
-            </form>
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Type d'article *</label> <br>
-                    <input type="text" required name="prenom" id="prenom" placeholder="Type d'article "
-                        class="w-100 p-2 rounded m-1" size="30" maxlength="20">
-                </p>
-            </form>
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Unité de l'article * </label> <br>
-                    <input type="text" required name="prenom" id="prenom"
-                        placeholder="Unité de mesure du montant heure/prix unitairel" class="w-100 p-2 rounded m-1"
-                        size="30" maxlength="20">
-                </p>
-            </form>
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Prix unitaire de l'article *</label> <br>
-                    <input type="text" required name="prenom" id="prenom" placeholder="Prix unitstire de l'article "
-                        class="w-100 p-2 rounded m-1" size="30" maxlength="20">
-                </p>
-            </form>
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Taxe à valeur ajoutée * </label> <br>
-                    <input type="text" required name="prenom" id="prenom"
-                        placeholder="TVA applicable à l'article en pourcentage" class="w-100 p-2 rounded m-1" size="30"
-                        maxlength="20">
-                </p>
-            </form>
+        <div class="offcanvas-body ">
+            <div class=" card2 flex-column gap-2">
 
-            <form method="get" action="">
-                <p>
-                    <label for="ameliorer">Des conseils pour améliorer mon site ?</label><br>
-                    <textarea name="ameliorer" id="ameliorer" placeholder="Désignation de l'article"
-                        class="w-100 p-2 rounded m-1"></textarea>
-                </p>
-            </form>
+
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Désignation de l'article * </label> <br>
+                        <input type="text" required name="prenom" id="prenom" placeholder="Désignation de l'article"
+                            class="w-100 p-2 rounded m-1" size="30" maxlength="20">
+                    </p>
+                </form>
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Type d'article *</label> <br>
+                        <input type="text" required name="prenom" id="prenom" placeholder="Type d'article "
+                            class="w-100 p-2 rounded m-1" size="30" maxlength="20">
+                    </p>
+                </form>
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Unité de l'article * </label> <br>
+                        <input type="text" required name="prenom" id="prenom"
+                            placeholder="Unité de mesure du montant heure/prix unitairel" class="w-100 p-2 rounded m-1"
+                            size="30" maxlength="20">
+                    </p>
+                </form>
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Prix unitaire de l'article *</label> <br>
+                        <input type="text" required name="prenom" id="prenom" placeholder="Prix unitstire de l'article "
+                            class="w-100 p-2 rounded m-1" size="30" maxlength="20">
+                    </p>
+                </form>
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Taxe à valeur ajoutée * </label> <br>
+                        <input type="text" required name="prenom" id="prenom"
+                            placeholder="TVA applicable à l'article en pourcentage" class="w-100 p-2 rounded m-1"
+                            size="30" maxlength="20">
+                    </p>
+                </form>
+
+                <form method="get" action="">
+                    <p>
+                        <label for="ameliorer">Description de notes ?</label><br>
+                        <textarea name="ameliorer" id="ameliorer" placeholder="Désignation de l'article"
+                            class="w-100 p-2 rounded m-1"></textarea>
+                    </p>
+                </form>
+            </div>
         </div>
+
     </div>
 
     <!-- OFFCANVAS -->
@@ -830,36 +853,39 @@
 
         </div>
         <div class="offcanvas-body">
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Désignation du client * </label> <br>
-                    <input type="text" required name="prenom" id="prenom"
-                        placeholder="Nom et prénom ou nom de l'éntreprise" class="w-100 p-2 rounded m-1" size="30"
-                        maxlength="20">
-                </p>
-            </form>
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Localisation du client *</label> <br>
-                    <input type="text" required name="prenom" id="prenom" placeholder="Ville et pays du client"
-                        class="w-100 p-2 rounded m-1" size="30" maxlength="20">
-                </p>
-            </form>
-            <form method="get" action="">
-                <p>
-                    <label for="prenom">Boite postale du client * </label> <br>
-                    <input type="text" required name="prenom" id="prenom" placeholder="Boite postale"
-                        class="w-100 p-2 rounded m-1" size="30" maxlength="20">
-                </p>
-            </form>
 
-            <form method="get" action="">
-                <p>
-                    <label for="ameliorer">Des conseils pour améliorer mon site ?</label><br>
-                    <textarea name="ameliorer" id="ameliorer" placeholder="Désignation de l'article"
-                        class="w-100 p-2 rounded m-1"></textarea>
-                </p>
-            </form>
+            <div class=" card2 flex-column gap-2">
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Désignation du client * </label> <br>
+                        <input type="text" required name="prenom" id="prenom"
+                            placeholder="Nom et prénom ou nom de l'éntreprise" class="w-100 p-2 rounded m-1" size="30"
+                            maxlength="20">
+                    </p>
+                </form>
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Localisation du client *</label> <br>
+                        <input type="text" required name="prenom" id="prenom" placeholder="Ville et pays du client"
+                            class="w-100 p-2 rounded m-1" size="30" maxlength="20">
+                    </p>
+                </form>
+                <form method="get" action="">
+                    <p>
+                        <label for="prenom">Boite postale du client * </label> <br>
+                        <input type="text" required name="prenom" id="prenom" placeholder="Boite postale"
+                            class="w-100 p-2 rounded m-1" size="30" maxlength="20">
+                    </p>
+                </form>
+
+                <form method="get" action="">
+                    <p>
+                        <label for="ameliorer">Des conseils pour améliorer mon site ?</label><br>
+                        <textarea name="ameliorer" id="ameliorer" placeholder="Désignation de l'article"
+                            class="w-100 p-2 rounded m-1"></textarea>
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
 

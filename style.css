@@ -21,6 +21,7 @@ body {
 .header-fixed {
     
     position: fixed;
+    align-items: start;
     top: 0;
     left: 0;
     width: 100%;
@@ -57,7 +58,7 @@ body {
 
 .nav-tabs .nav-link.active {
     background-color: #89C7F4;
-    color: #fff;
+    color: #301fe1;
     font-weight: bold;
 }
 
@@ -177,11 +178,16 @@ body {
 
 .svc{
     width: 95%;
-    gap: 60px !important;
+    gap: 20px !important;
 }
 
 .svc1{
     color: #327be9;
+    font-size: 14px;
+}
+.svc2{
+    
+    font-size: 13px;
 }
 .colr{
     color: #767a85;
@@ -218,22 +224,22 @@ body {
 }
 
 .cole {
-    width: 15px;
-    height: 15px;
-    background: #575b5e;
+    width: 30px;
+    height: 25px;
+    background: #E14324;
     border-radius: 3px;
 }
 
 .cole1 {
-    width: 15px;
-    height: 15px;
-    background: #FE7437;
+   width: 30px;
+    height: 25px;
+    background: #2EC237;
     border-radius: 3px;
 }
 .cole2 {
-    width: 15px;
-    height: 15px;
-    background: #EEEEEE;
+    width: 30px;
+    height: 25px;
+    background: #1D4E80;
     border-radius: 3px;
 }
 
@@ -283,6 +289,20 @@ body {
 background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1) 91%);
 }
 
+.prod{
+    color: #656668;
+}
+
+.tex1{
+    font-size: 13px;
+}
+.tex2{
+    font-size: 14px;
+}
+
+.fad{
+    gap: 60px !important;
+}
 
 
 
@@ -290,6 +310,7 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
 @media (max-width: 1440px) {
     .CONTENU {
         width: 100%;
+        margin-top: 90px;
     }
 
     .menu {
@@ -310,19 +331,33 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
 ======================= */
 .menu {
     display: flex;
-    gap: 10px;
+
 }
 
 .menu-item {
     width: 100%;
-    border-left: 1px solid white;
+    text-align: start;
+   
     padding: 10px;
+}
+
+.zey{
+     border-left: 1px solid white;
+     font-size: 13px;
+     padding: 0;
+     padding-left: 10px;
+}
+
+.zey1{
+     
+     font-size: 13px;
+     padding: 0;
 }
 
 .menu-item label {
     font-weight: bold;
     display: block;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .submenu p {
@@ -340,7 +375,7 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
 @media (max-width:768px) {
 
     .CONTENU {
-        margin-top: 220px;
+        margin-top: 150px;
     }
 
     .FAC,
@@ -375,6 +410,7 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
     .menu {
         flex-direction: column;
         position: relative;
+        
     }
 
     .menuli {
@@ -414,7 +450,7 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
         display: none;
         z-index: 999;
     }
-
+    
 
     /* ouverture sans pousser les autres */
     .menu-item input:checked~.submenu {
@@ -434,6 +470,16 @@ background: linear-gradient(0deg,rgba(43, 55, 92, 0.99) 77%, rgba(53, 72, 136, 1
     .svc{
         flex-direction: column;
     }
+
+    .zey{
+     border-left: none !important;
+     font-size: 13px;
+     padding: 0;
+     /* padding-left: 10px; */
+}
+.prod{
+    color: white;
+}
 }
 
 @media (max-width: 425px) {

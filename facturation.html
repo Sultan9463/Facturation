@@ -16,26 +16,23 @@
 
     <!-- HEADER FIXE -->
     <div class="header-fixed entete">
-
-        <div class="header d-flex justify-content-between align-items-center px-4">
+        <div class="header d-flex justify-content-between align-items-center px-3">
             <h3 class="m-0">FACTURATION-APP</h3>
             <div class="d-flex gap-2">
                 <i class="bi bi-question-circle-fill me-3"> Aide</i>
                 <i class="bi bi-calendar-event"></i>
                 <i class="bi bi-shop"></i>
-                <i class="bi bi-gear-fill"></i>
+                <i class="bi bi-gear-fill fs-5 "></i>
             </div>
         </div>
-
-        <div class="menu px-5 text-white">
-
+        <div class="menu px-2 text-white">
             <!-- PRODUCTIVITÉ -->
-            <div class="menu-item">
+            <div class="menu-item  zey1 m-1">
                 <input type="checkbox" id="m1">
-                <label for="m1">PRODUCTIVITÉ</label>
+                <label class="m-0 prod" for="m1">PRODUCTIVITÉ</label>
 
                 <div class="submenu">
-                    <p> <i class="bi bi-graph-up"></i> Analyse</p>
+                   <a class="text-decoration-none text-white" href="index.html"><p> <i class="bi bi-graph-up"></i> Analyse</p></a>
                     <p> <i class="bi bi-check-circle"></i> Tâches</p>
                     <p><i class="bi bi-card-checklist"></i> Projets</p>
                     <p><i class="bi bi-clock-history"></i> suivi du temps</p>
@@ -43,21 +40,26 @@
             </div>
 
             <!-- SUIVI -->
-            <div class="menu-item">
+            <div class="menu-item zey m-1">
                 <input type="checkbox" id="m2">
-                <label for="m2">SUIVI & FACTURES</label>
+                <label class="prod" for="m2">SUIVI & FACTURES</label>
                 <div class="submenu">
-                    <p id="goFacturation" class="cursor-pointer"> <i class="bi bi-file-earmark-text"></i> Facturation
-                    </p>
-                    <p id="goClient"> <i class="bi bi-person-square cursor-pointer"></i> Client</p>
-                    <p id="goArticles"> <i class="bi bi-file-earmark cursor-pointer"></i> Articles</p>
+                    <a href="facturation.html" class="text-decoration-none text-white">
+                        <p id="goFacturation"> <i class="bi bi-file-earmark-text"></i> Facturation</p>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <p id="goClient"> <i class="bi bi-person-square"></i> Client</p>
+                    </a>
+                    <a href="#" class="text-decoration-none text-white">
+                        <p id="goArticles"> <i class="bi bi-file-earmark"></i> Articles</p>
+                    </a>
                 </div>
             </div>
 
             <!-- AUTRES -->
-            <div class="menu-item">
+            <div class="menu-item zey m-1">
                 <input type="checkbox" id="m3">
-                <label for="m3">COMPTABILITÉ</label>
+                <label class="prod" for="m3">COMPTABILITÉ</label>
 
                 <div class="submenu">
                     <p> <i class="bi bi-bank"></i> Banques</p>
@@ -66,9 +68,9 @@
                     <p><i class="bi bi-file-text"></i> TVA</p>
                 </div>
             </div>
-            <div class="menu-item">
+            <div class="menu-item zey m-1">
                 <input type="checkbox" id="m3">
-                <label for="m3">COMPTABILITÉ</label>
+                <label class="prod" for="m3">COMPTABILITÉ</label>
 
                 <div class="submenu">
                     <p><i class="bi bi-tag"></i> CE des insides</p>
@@ -95,14 +97,14 @@
         </div>
         <p class="text-justify-start w-100 px-4">Facturer vos clients en quelque clique</p>
 
-        <div class="d-flex align-items-center justify-content-start w-100">
+        <div class="d-flex align-items-center flex-wrap justify-content-start w-100">
 
             <div class="d-flex px-4 text-primary">
                 <i class="bi bi-text-left"></i>
                 <p>Comment ça marche ?</p>
 
             </div>
-            <div class="d-flex text-primary gap-2">
+            <div class="d-flex text-primary px-4 gap-2">
                 <i class="bi bi-question-circle"></i>
                 <p>FAQ Facturations</p>
 
@@ -115,7 +117,7 @@
         </div>
 
         <!-- TABS -->
-        <ul class="nav nav-tabs w-75 menu  menuli justify-content-center bg-white shadow-bottom rounded py-3"
+        <ul class="container nav nav-tabs  menu  menuli justify-content-between fw-bold bg-white shadow-bottom rounded py-3"
             id="myTab">
 
             <li class="nav-item">
@@ -149,11 +151,11 @@
         </ul>
 
         <!-- CONTENU TABS -->
-        <div class="tab-content menu1 fact p-0 w-50 menu-card mt-3">
+        <div class=" container tab-content menu1 fact p-0 menu-card mt-3">
 
             <!-- FACTURATION -->
             <div class="tab-pane p-0  fade show active" id="facturation">
-                <div class="w-100  d-flex align-items-center justify-content-end gap-2 my-3">
+                <div class="w-100 flex-wrap  d-flex align-items-center justify-content-end gap-2 my-3">
 
                     <a href="creer facture.html" class="decoration-none"><button type="button"
                             class="btn border border-1 border-primary text-primary cursor-pointer ">+
@@ -163,7 +165,7 @@
                             class="btn border border-1 border-primary text-primary cursor-pointer ">+
                             Creer un
                             compte </button></a>
-                    <button type="button" class="btn auto text-white"> <i class="bi bi-database-add me-1"></i>
+                    <button type="button" class="btn btn-dark"> <i class="bi bi-database-add me-1"></i>
                         Automatiser</button>
                 </div>
 
@@ -195,119 +197,279 @@
                         <p class="m-0 p-0">Facturation</p>
                     </div>
                     <div class="bg-white p-1 w-100 rounded">
-                        <input type="text" placeholder="• Rechercher par numéro, litre, client..."
+                        <input type="text" placeholder="🔎 Rechercher par numéro, litre, client..."
                             class="form-control w-100 border-0 shadow-none">
                     </div>
-                    <div class="bg-white d-flex gap-1 clien clien4 w-50 rounded">
-                        <i class="bi bi-file-person"></i>
-                        <p class="m-0 p-0">Clients</p>
+                    <div class="bg-white d-flex justify-content-between gap-1 clien clien4 w-50 rounded">
+                        <div class="d-flex gap-1">
+                            <i class="bi bi-file-person"></i>
+                            <p class="m-0 p-0">Clients</p>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
                     </div>
                 </div>
 
-                <div
-                    class="d-flex flex-column gap-4 my-3 align-items-center w-100 bg-white p-3 justify-content-between">
-                    <div class="d-flex justify-content-start w-100">
+                <div class="bg-white rounded p-3 mt-3">
 
-                        <h6 class="w-100 colr">Designation</h6>
-                        <h6 class="w-50 colr">Status</h6>
-                        <h6 class="w-50 colr">Montant HT</h6>
-                        <h6 class="w-50 colr ">Montant TTC</h6>
+                    <!-- Conteneur scrollable -->
+                    <div class="table-responsive-md">
+
+                        <div style="min-width: 850px;">
+
+                            <!-- En-tête -->
+                            <div class="d-flex fw-bold border-bottom pb-2 mb-3">
+
+                                <div style="width:40%;">Désignation</div>
+
+                                <div style="width:20%;">Statut</div>
+
+                                <div style="width:20%;" class="text-end">
+                                    Montant HT
+                                </div>
+
+                                <div style="width:20%;" class="text-end">
+                                    Montant TTC
+                                </div>
+
+                            </div>
+
+                            <!-- Ligne -->
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center py-3 pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#facturationPopup">
+
+                                <div style="width:40%;">
+
+                                    <strong>F-2023-0112</strong><br>
+
+                                    <span class="text-primary">
+                                        John Dio
+                                    </span><br>
+
+                                    <small>
+                                        <i class="bi bi-clock"></i> 01 mars 2022
+                                        <i class="bi bi-calendar ms-2"></i> 11 mars 2023
+                                    </small>
+
+                                </div>
+
+                                <div style="width:20%;">
+                                    <span class="final px-2 py-1">
+                                        Finalisé
+                                    </span>
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    10 000 FCFA
+                                </div>
+
+                                <div style="width:20%;" class="text-end fw-bold">
+                                    11 000 FCFA
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer"
-                        data-bs-toggle="offcanvas" data-bs-target="#facturationPopup">
-                        <h6 class="w-100">F-2023-0112 <br>
-                            <p class="text-primary m-0 p-0 fs-5">Jhon Dio</p>
-                            <i class="bi bi-clock"></i> <small class="peti">O1 mars 2022</small> <i
-                                class="bi bi-calendar"></i> <small class="peti">11 mars 2023</small>
-                        </h6>
-                        <h6 class="w-50 "><span class="final p-1">Finalisé</span></h6>
-                        <h6 class="w-50 fw-bold">10 000,00 fcfa</h6>
-                        <h6 class="w-50 fw-bold">11 000,00 fcfa</h6>
-                    </div>
-
-                    <div class="d-flex align-items-center w-100 justify-content-end">
-                        <p class="police">Ligne par <i class="bi bi-caret-down-fill"></i> page 25 <1-5 de 5> </p>
-
-                    </div>
                 </div>
 
             </div>
@@ -353,7 +515,7 @@
                         <p class="m-0 p-0">Facturation</p>
                     </div>
                     <div class="bg-white p-1 w-100 rounded">
-                        <input type="text" placeholder="• Rechercher par numéro, litre, client..."
+                        <input type="text" placeholder=" 🔎 Rechercher par numéro, litre, client..."
                             class="form-control w-100 border-0 shadow-none">
                     </div>
                     <div class="bg-white clien clien4 w-50 rounded">
@@ -467,10 +629,13 @@
             <div class="tab-pane fade w-100" id="client">
                 <div class="w-100 d-flex align-items-center justify-content-end gap-2 my-3">
 
-                    <button type="button" class="btn border border-1 border-primary text-primary cursor-pointer "
+                    <button type="button" class="btn btn-primary border-primary cursor-pointer "
                         data-bs-toggle="offcanvas" data-bs-target="#facturationclient">+
                         Nouveau
                         article </button>
+
+                    <button type="button" class="btn btn-dark"> <i class="bi bi-database-add me-1"></i>
+                        Automatiser</button>
 
 
                 </div>
@@ -478,7 +643,7 @@
                 <div class="tab-pane w-100 d-flex align-items-center gap-2 justify-content-between fade show active"
                     id="facturation">
                     <div class="bg-white p-1 w-50 rounded">
-                        <input type="text" placeholder="• Rechercher par numéro, litre, client..."
+                        <input type="text" placeholder="🔎 Rechercher par numéro, litre, client..."
                             class="form-control w-20 border-0 shadow-none">
                     </div>
                 </div>
@@ -561,13 +726,13 @@
                 <div class="tab-pane w-50 d-flex align-items-center gap-2 justify-content-between fade show active"
                     id="facturation">
                     <div class="bg-white p-1 w-100 rounded">
-                        <input type="text" placeholder="• Rechercher par numéro, litre, client..."
+                        <input type="text" placeholder="🔎 Rechercher par numéro, litre, client..."
                             class="form-control w-100 border-0 shadow-none">
                     </div>
                 </div>
                 <div
                     class="d-flex flex-column gap-4 my-3 align-items-center w-100 bg-white p-3 justify-content-between">
-                    <div class="d-flex justify-content-start w-100">
+                    <div class="d-flex justify-content-center w-100">
 
                         <h6 class="w-100 fw-bolder">Designation</h6>
                         <h6 class="w-50 fw-bolder">Type d'article</h6>
@@ -576,7 +741,7 @@
                         <h6 class="w-50 fw-bolder">TVA</h6>
                         <h6 class="w-50 fw-bolder"></h6>
                     </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 pointer">
+                    <div class="d-flex align-items-center justify-content-between w-100 pointer">
                         <h6 class="w-100 fw-bolder">Waké</h6>
                         <h6 class="w-50">Vente de marchandise </h6>
                         <h6 class="w-50">unité</h6>

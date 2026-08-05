@@ -15,7 +15,7 @@
 <body>
     <!-- HEADER FIXE -->
     <div class="header-fixed entete">
-        <div class="header d-flex justify-content-between align-items-center px-4">
+        <div class="header d-flex justify-content-between align-items-center px-3">
             <h3 class="m-0">FACTURATION-APP</h3>
             <div class="d-flex gap-2">
                 <i class="bi bi-question-circle-fill me-3"> Aide</i>
@@ -24,14 +24,14 @@
                 <i class="bi bi-gear-fill fs-5 "></i>
             </div>
         </div>
-        <div class="menu px-5 text-white">
+        <div class="menu px-2 text-white">
             <!-- PRODUCTIVITÉ -->
-            <div class="menu-item">
+            <div class="menu-item  zey1 m-1">
                 <input type="checkbox" id="m1">
-                <label for="m1">PRODUCTIVITÉ</label>
+                <label class="m-0 prod" for="m1">PRODUCTIVITÉ</label>
 
                 <div class="submenu">
-                    <p> <i class="bi bi-graph-up"></i> Analyse</p>
+                    <a class="text-decoration-none text-white" href="index.html"><p> <i class="bi bi-graph-up"></i> Analyse</p></a>
                     <p> <i class="bi bi-check-circle"></i> Tâches</p>
                     <p><i class="bi bi-card-checklist"></i> Projets</p>
                     <p><i class="bi bi-clock-history"></i> suivi du temps</p>
@@ -39,9 +39,9 @@
             </div>
 
             <!-- SUIVI -->
-            <div class="menu-item">
+            <div class="menu-item zey m-1">
                 <input type="checkbox" id="m2">
-                <label for="m2">SUIVI & FACTURES</label>
+                <label class="prod" for="m2">SUIVI & FACTURES</label>
                 <div class="submenu">
                    <a href="facturation.html" class="text-decoration-none text-white"> <p id="goFacturation">  <i class="bi bi-file-earmark-text"></i> Facturation</p></a>
                     <a href="#" class="text-decoration-none text-white"><p id="goClient"> <i class="bi bi-person-square"></i> Client</p></a>
@@ -50,9 +50,9 @@
             </div>
 
             <!-- AUTRES -->
-            <div class="menu-item">
+            <div class="menu-item zey m-1">
                 <input type="checkbox" id="m3">
-                <label for="m3">COMPTABILITÉ</label>
+                <label class="prod" for="m3">COMPTABILITÉ</label>
 
                 <div class="submenu">
                     <p> <i class="bi bi-bank"></i> Banques</p>
@@ -61,9 +61,9 @@
                     <p><i class="bi bi-file-text"></i> TVA</p>
                 </div>
             </div>
-            <div class="menu-item">
+            <div class="menu-item zey m-1">
                 <input type="checkbox" id="m3">
-                <label for="m3">COMPTABILITÉ</label>
+                <label class="prod" for="m3">COMPTABILITÉ</label>
 
                 <div class="submenu">
                     <p><i class="bi bi-tag"></i> CE des insides</p>
@@ -84,14 +84,14 @@
         <div class="d-flex justify-content-between align-items-center mt-3 w-100 px-4">
             <h3 class="mb-3 ext-primary">Bonjour User</h3>
         </div>
-        <div class="mx-5 d-flex gap-5 svc">
+        <div class="mx-5 mb-3 d-flex gap-5 fad svc">
             <div
                 class="demo-box shadow-bottom w-100 h-100 overflow-hidden d-flex align-items-start justify-content-start flex-column p-3">
 
-                <h6 class="m-0 fw-bold text-center">
+                <h5 class="mt-2 fw-bold text-center">
                     Statistique des facturations
-                </h6>
-                <h6 class="text-center text-secondary">
+                </h5>
+                <h6 class="text-secondary">
                     Faite glisser votre souris au dessus du diagramme pour voir plus de détails
                 </h6>
 
@@ -135,10 +135,10 @@
             <div
                 class="demo-box w-100 h-100 shadow-bottom con overflow-hidden d-flex align-items-start  flex-column p-3">
 
-                <h6 class=" m-0 fw-bold text-center">
+                <h5 class=" mt-2 fw-bold text-center">
                     Statistique des articles par catégorie
-                </h6>
-                <h6 class="text-center text-secondary">
+                </h5>
+                <h6 class="text-secondary">
                     Faite glisser votre souris au dessus du diagramme pour voir plus de détails
                 </h6>
 
@@ -179,7 +179,7 @@
             </div>
         </div>
 
-        <div class="d-flex gap-2 mt-3 svc w-100">
+        <div class="d-flex gap-1 m-3 svc w-100">
             <div class="d-flex bg-white w-100 shadow-bottom rounded p-3 cursor-pointer justify-content-between">
                 <a href="#facturation" class="text-decoration-none text-body"> <i class="bi bi-file-earmark-text"></i> Facturation</a>
                 <i class="bi bi-chevron-right"></i>
@@ -196,9 +196,9 @@
             </div>
         </div>
 
-        <div class="d-flex gap-2 mt-3 mb-3 svc w-100">
+        <div class="d-flex gap-2 mt-1 mb-3 svc w-100">
             <div id="facturation" class="d-flex flex-column  box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
-                <div class="w-75 d-flex justify-content-between justify-content-center">
+                <div class="w-75 mt-4 d-flex justify-content-between justify-content-center">
                     <h6 class="svc1">en attente  </h6>
                     <h6>en retard </h6>
                 </div>
@@ -211,63 +211,63 @@
 
                 <div class="d-flex w-100 pt-3 justify-content-between">
 
-                    <h6>F-2023-0112 <br>
+                    <h6 class="tex1">F-2023-0112 <br>
 
                         <span class="text-primary">John Doe</span> <br>
                         13 mars 2023
                     </h6>
 
-                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+                    <h6 class="fw-bold tex2">11 500,00 fcfa</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 justify-content-between">
 
-                    <h6>F-2023-0112 <br>
+                 <h6 class="tex1">F-2023-0112 <br>
 
                         <span class="text-primary">John Doe</span> <br>
                         13 mars 2023
                     </h6>
 
-                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+                   <h6 class="fw-bold tex2">11 500,00 fcfa</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 justify-content-between">
 
-                    <h6>F-2023-0112 <br>
+                   <h6 class="tex1">F-2023-0112 <br>
 
                         <span class="text-primary">John Doe</span> <br>
                         13 mars 2023
                     </h6>
 
-                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+                    <h6 class="fw-bold tex2">11 500,00 fcfa</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 justify-content-between">
 
-                    <h6>F-2023-0112 <br>
+                   <h6 class="tex1">F-2023-0112 <br>
 
                         <span class="text-primary">John Doe</span> <br>
                         13 mars 2023
                     </h6>
 
-                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+                   <h6 class="fw-bold tex2">11 500,00 fcfa</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 justify-content-between">
 
-                    <h6>F-2023-0112 <br>
+                    <h6 class="tex1">F-2023-0112 <br>
 
                         <span class="text-primary">John Doe</span> <br>
                         13 mars 2023
                     </h6>
 
-                    <h6 class="fw-bold">11 500,00 fcfa</h6>
+                    <h6 class="fw-bold tex2">11 500,00 fcfa</h6>
 
                 </div>
                 
             </div>
             <div id="Article" class="d-flex  flex-column box-2 shadow-bottom bg-white w-100 rounded p-3 justify-content-between">
-                <div class="w-75 d-flex justify-content-between justify-content-center">
+                <div class="w-75 mt-3 d-flex justify-content-between justify-content-center">
                     <h6 class="svc1">en attente  </h6>
                     <h6>en retard </h6>
                 </div>
@@ -280,42 +280,42 @@
 
                 <div class="d-flex w-100 h-25 pt-3 justify-content-between">
 
-                    <h6 class="fw-bold">Waké
+                    <h6 class="fw-bold tex2">Waké
                     </h6>
 
-                    <h6>Vente de marchandises</h6>
+                    <h6 class="tex1">Vente de marchandises</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 h-25 justify-content-between">
 
-                    <h6 class="fw-bold">Forfaits main
+                    <h6 class="fw-bold tex2">Forfaits main
                     </h6>
 
-                    <h6>Prestation artistique</h6>
+                    <h6 class="tex1">Prestation artistique</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 h-25 justify-content-between">
 
-                    <h6 class="fw-bold">Assistance Admin
+                    <h6 class="fw-bold tex2">Assistance Admin
                     </h6>
 
-                    <h6>Prestation service</h6>
+                    <h6 class="tex1">Prestation service</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 h-25 justify-content-between">
 
-                    <h6 class="fw-bold">Template de site web
+                    <h6 class="fw-bold tex2">Template de site web
                     </h6>
 
-                    <h6>Prestation service</h6>
+                    <h6 class="tex1">Prestation service</h6>
 
                 </div>
                 <div class="d-flex w-100 pt-3 h-25 justify-content-between">
 
-                    <h6 class="fw-bold">Développement web
+                    <h6 class="fw-bold tex2">Développement web
                     </h6>
 
-                    <h6>Prestation service</h6>
+                    <h6 class="tex1">Prestation service</h6>
 
                 </div>
 
@@ -337,7 +337,16 @@
 
                     <div class="d-flex flex-column m-0 p-0">
                         <h5 class="svc1" >john Doe</h5>
-                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <h6 class="p-0 m-0 svc2">john.doe@example.com </h6>
+                        <small f>BP-10000 Niamey</small>
+                    </div>
+                    <h6 class="fw-bold fs-1">...</h6>
+                </div>
+                <div class="d-flex w-100 m-0 align-items-center justify-content-between">
+
+                    <div class="d-flex flex-column m-0 p-0">
+                        <h5 class="svc1" >john Doe</h5>
+                        <h6 class="p-0 m-0 svc2">john.doe@example.com </h6>
                         <small>BP-10000 Niamey</small>
                     </div>
                     <h6 class="fw-bold fs-1">...</h6>
@@ -346,16 +355,7 @@
 
                     <div class="d-flex flex-column m-0 p-0">
                         <h5 class="svc1" >john Doe</h5>
-                        <h6 class="p-0 m-0">john.doe@example.com </h6>
-                        <small>BP-10000 Niamey</small>
-                    </div>
-                    <h6 class="fw-bold fs-1">...</h6>
-                </div>
-                <div class="d-flex w-100 m-0 align-items-center justify-content-between">
-
-                    <div class="d-flex flex-column m-0 p-0">
-                        <h5 class="svc1" >john Doe</h5>
-                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                       <h6 class="p-0 m-0 svc2">john.doe@example.com </h6>
                         <small>BP-10000 Niamey</small>
                     </div>
                     <h6 class="fw-bold fs-1">...</h6>
@@ -364,7 +364,7 @@
 
                     <div class="d-flex flex-column m-0 p-0">
                         <h5 class="svc1" >john Doe</h5>
-                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <h6 class="p-0 m-0 svc2">john.doe@example.com </h6>
                         <small>BP-10000 Niamey</small>
                     </div>
                     <h6 class="fw-bold fs-1">...</h6>
@@ -373,7 +373,7 @@
 
                     <div class="d-flex flex-column m-0 p-0">
                         <h5 class="svc1" >john Doe</h5>
-                        <h6 class="p-0 m-0">john.doe@example.com </h6>
+                        <h6 class="p-0 m-0 svc2">john.doe@example.com </h6>
                         <small>BP-10000 Niamey</small>
                     </div>
                     <h6 class="fw-bold fs-1">...</h6>
